@@ -1,3 +1,3 @@
 # flask-dataviz-demo
 
-Based on tutorial: https://medium.com/@rchang/learning-how-to-build-a-web-application-c5499bd15c8f
+Based on tutorial: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
