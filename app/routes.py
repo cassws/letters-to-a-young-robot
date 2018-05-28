@@ -1,6 +1,18 @@
+from flask import render_template
 from app import app
 
 @app.route('/')
 @app.route('/index')
 def index():
-	return "Hello, World!"
+	user = {'username': 'Doggo'}
+	posts = [
+		{
+			'author': {'username': 'Binta'},
+			'body': 'Beautiful day in Ithaca!'
+		},
+		{
+			'author': {'username': 'Milo'},
+			'body': 'The Avengers movie was so not so great!'
+		}
+	]
+	return render_template('index.html', title="Home", user=user, posts=posts)
