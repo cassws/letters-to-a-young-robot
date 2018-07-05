@@ -16,3 +16,8 @@ def index():
 		}
 	]
 	return render_template('index.html', title="Home", user=user, posts=posts)
+
+
+@app.route('/boot_test')
+def boot_test():
+	return render_template('boot_test.html')
