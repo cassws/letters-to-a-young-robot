@@ -1,15 +1,18 @@
 from flask import render_template, request, redirect, url_for
 from app import app
 from . models import User, Post, db
-import datetime
+from datetime import datetime
 
 @app.route('/')
 @app.route('/index')
 def index():
 	user = {'username': 'Doggo'}
-	# posts = Post.query.all()
-	posts = {}
-	return render_template('index.html', title="Home", user=user, posts=posts)
+	try:
+		posts = Post.query.filter_by(author='user').all()
+	except:
+		posts = {}
+	
+	return render_template('index.html', title="Home", user=user, posts=posts, time=datetime.now())
 
 
 @app.route('/boot_test')

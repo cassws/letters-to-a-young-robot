@@ -2,12 +2,15 @@
 
 {% block content %}
 <div class="container"></div>
-<h4>Title</h4>
+<h4>Write a letter</h4>
 <div>
-  <textarea rows="15" style="width:100%">Here's a blog post!</textarea>
+  <input type="text" placeholder="Subject" style="width:100%">
 </div>
 <div>
-  <button class="btn btn-large btn-primary" type="submit">Submit</button>
+  <textarea rows="15" style="width:100%" placeholder="Write here..."></textarea>
+</div>
+<div>
+  <button class="btn btn-large btn-primary" type="submit">Send</button>
 </div>
 </div>
   {% endblock %}

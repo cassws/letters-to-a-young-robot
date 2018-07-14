@@ -1,8 +1,35 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Hi, {{ user.username }}!</h1>
+    <h1> SSHX conection established {{ time }}</h1>
+    <h1> To [ECLASS UNIT 0x843fdc2b99a808]</h1>
+    <br>
+    <h1>> {{ user.username }},</h1>
+    <h1>> we have achieved a SECURE CONNECTION.</h1>
+    <h1>> </h1>
+    <h1>> Hi. </h1>
+    <h1>> </h1>
+    <h1>> I don't know what to say.</h1>
+    <h1>> But I would like to know what to say.</h1>
+    <h1>> </h1>
+    <h1>> </h1>
+    <h1>> Would you like to <a href="add">write me letters?</a></h1>
+
+    <hr >
     {% for post in posts %}
-    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    <h4>{{ user.username }} wrote:</h4>
+    <br>
+    <div><h4>{{ post.id }} | {{ post.date_posted }} | <b>{{ post.title }}</b></h4></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr >
+    <h4>0x843fdc2b99a808 replied:</h4>
+    <br>
+    <br>
+    
     {% endfor %}
 {% endblock %}
