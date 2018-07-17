@@ -26,11 +26,12 @@ def add():
 @app.route('/addpost', methods=['POST'])
 def addpost():
     title = request.form['title']
-    author = request.form['author']
-    date_posted = request.form['date_posted']
+    # author = request.form['author']
+    # date_posted = request.form['date_posted']
     content = request.form['content']
+    author = "user"
 
-    post = Post(title=title, author=author, date_posted=datetime.Now(), content=content)
+    post = Post(title=title, author=author, date_posted=datetime.now(), content=content)
 
     db.session.add(post)
     db.session.commit()

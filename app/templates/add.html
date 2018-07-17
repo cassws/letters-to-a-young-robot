@@ -4,13 +4,11 @@
 <div class="container"></div>
 <h4>Write a letter</h4>
 <div>
-  <input type="text" placeholder="Subject" style="width:100%">
-</div>
-<div>
-  <textarea rows="15" style="width:100%" placeholder="Write here..."></textarea>
-</div>
-<div>
-  <button class="btn btn-large btn-primary" type="submit">Send</button>
+  <form action="{{ url_for('addpost') }}" method="POST">
+    <input name="title" type="text" placeholder="Subject" style="width:100%">
+    <textarea name="content" rows="15" style="width:100%" placeholder="Write here..."></textarea>
+    <button class="btn btn-large btn-primary" type="submit">Send</button>
+  </form>
 </div>
 </div>
   {% endblock %}

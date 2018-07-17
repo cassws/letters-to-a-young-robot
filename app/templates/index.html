@@ -16,10 +16,12 @@
     <h1>> Would you like to <a href="add">write me letters?</a></h1>
 
     <hr >
-    {% for post in posts %}
+
     <h4>{{ user.username }} wrote:</h4>
     <br>
+    {% for post in posts %}
     <div><h4>{{ post.id }} | {{ post.date_posted }} | <b>{{ post.title }}</b></h4></div>
+    {% endfor %}
     <br>
     <br>
     <br>
@@ -31,5 +33,5 @@
     <br>
     <br>
     
-    {% endfor %}
+   
 {% endblock %}
