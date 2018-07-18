@@ -1,5 +1,6 @@
 from flask import render_template, request, redirect, url_for
 from app import app
+from . nlp import nlp_process
 from . models import User, Post, db
 from datetime import datetime
 
@@ -35,5 +36,6 @@ def addpost():
 
     db.session.add(post)
     db.session.commit()
+    task = nlp_process.delay()
 
     return redirect(url_for('index'))

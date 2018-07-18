@@ -1,6 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
 from datetime import datetime
 import os
+# from flask_socketio import SocketIO
+import time
+from . __init__ import celery
+from app import nlp
 
 
 app = Flask(__name__)
