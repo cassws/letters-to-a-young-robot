@@ -15,8 +15,4 @@ celery = make_celery(app)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-# socketio = SocketIO(app)
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
 from app import views, models
