@@ -2,7 +2,7 @@
 
 Who has given you SSH access to [ECLASS UNIT 0x843fdc2b99a808]? What is the purpose of legacy training module [Latent/Experiential Training Toolkit (Exo-class Robotics)] (LETTER)? Why are robots such sweethearts?
 
-This journaling app+game invites you to exchange letters with an Exo-class Robot, and in doing so, contribute to their training in language (among other things). If you're like me, journaling is more fun when it's more like writing letters. Stick around long enough to discover the rest, too...
+This journaling app+game invites you to exchange letters with an Exo-class robot, and in doing so, contribute to their training in language (among other things). If you're like me, journaling is more fun when it's more like writing letters. Stick around long enough to discover the rest, too...
 
 
 ### Some links
