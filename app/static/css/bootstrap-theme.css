@@ -185,3 +185,18 @@
   border-color: #00aa00;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
+
+/* zoews additions */
+.popover-title {
+  background-color: black;
+  background-position: 0 -15px;
+  color: white;
+}
+.popover-content {
+  background-color: black;
+  background-position: 0 -15px;
+  color: white;
+}
+.popover-content a {
+  color: #aa00aa;
+}

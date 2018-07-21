@@ -21,7 +21,7 @@ function update_progress(status_url) {
         // update UI
         percent = parseInt(data['current'] * 100 / data['total']);
         percent_string = percent.toString();
-        var prog_bar = document.getElementById("prog_bar");
+        var prog_bar = document.getElementById("prog-bar");
         prog_bar.innerHTML = "NLP subroutines running, " + percent_string +"% complete"
         // nanobar.go(percent);
         // $(status_div.childNodes[1]).text(percent + '%');
@@ -30,6 +30,15 @@ function update_progress(status_url) {
         if (data['state'] != 'PENDING' && data['state'] != 'PROGRESS') {
             if ('result' in data) {
                 prog_bar.innerHTML = "Task " + percent_string +"% complete!"
+                $(function () {
+                    $('#prog-pop').popover({
+                        html: true
+                    });
+                    $('#prog-pop').popover('show');
+
+                    console.log('should be firing!')
+                    
+                })
 
                 // show result
                 // $(status_div.childNodes[3]).text('Result: ' + data['result']);
